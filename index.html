@@ -8,124 +8,107 @@
   <meta name="Description" content="Demonstration for portfolio-very-theme">
 
   <style>
-    :root, html, body {
+    :root {
+      scroll-behavior: smooth;
+    }
+    div {
       margin: 0;
-      padding: 0;
     }
-    #demo {
-      margin: var(--ddd-spacing-2);
+    banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:  #00000066;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: var(--ddd-spacing-16);
+      right: 0;
+      gap: var(--ddd-spacing-4);
     }
-    portfolio-very-theme {
-      margin: var(--ddd-spacing-2);
-      border: var(--ddd-border-md);
-      border-radius: var(--ddd-radius-lg);
+    banner a {
+      border: var(--ddd-border-width-md) solid var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-2);
+      background-color: var(--ddd-theme-default-white) !important;
+      text-decoration: none;
+      color: var(--ddd-theme-default-link);
+      border-radius:  var(--ddd-radius-md);
+      transition: 0.4s;
     }
-    portfolio-very-theme:hover {
-      box-shadow: var(--ddd-boxShadow-sm);
+    banner a:hover {
+      background-color: var(--ddd-theme-default-limestoneGray)  !important;
+      border: var(--ddd-border-width-md) solid var(--ddd-theme-default-limestoneGray);
     }
-    #example {
-      --portfolio-very-theme-font-size: var(--ddd-font-size-l);
-      background-color: var(--ddd-accent-2);
-      color: var(--ddd-primary-17);
+    .page {
+      min-height: 550px;
+      padding: 120px 16px 40px;
+    }
+    .one {
+      background-color: var(--ddd-theme-default-original87Pink);
+      color: var(--ddd-theme-default-white);
+    }
+    .two {
+      background-color: var(--ddd-theme-default-beaverBlue);
+      color: var(--ddd-theme-default-white);
+    }
+    .three {
+      background-color: var(--ddd-theme-default-wonderPurple);
+      color: var(--ddd-theme-default-white);
+    }
+    .four {
+      background-color: var(--ddd-theme-default-inventOrange);
+      color: var(--ddd-theme-default-white);
+    }
+    .five {
+      background-color: var(--ddd-theme-default-opportunityGreen);
+      color: var(--ddd-theme-default-white);
     }
   </style>
+
+
   <title>portfolio-very-theme</title>
 </head>
 
-<body>
-  <div id="demo">
-    <h1>portfolio-very-theme</h1>
-    <!-- this is going to do whatever the tag's defaults are -->
-    <h2>Default</h2>
-    <portfolio-very-theme></portfolio-very-theme>
-    <h2>Slot usage</h2>
-    <portfolio-very-theme data-accent="2" data-primary="17"><div>Sample slot content</div></portfolio-very-theme>
-    <h2>Property usage</h2>
-    <portfolio-very-theme id="example" title="Sample property title"></portfolio-very-theme>
-  </div>
-  <script type="module" src="./portfolio-very-theme.js"></script>
+<div>
 
-  <!-- Take HAX, the Web and you further down the rabbit hole -->
-  <style>
-    #follow-the-white-rabbit {
-      margin: var(--ddd-spacing-4) auto 64px  16px;
-      background-color: var(--ddd-accent-4);
-      color: black;
-    }
-    #follow-the-white-rabbit[open] summary {
-      background-color: var(--ddd-accent-4) !important;
-      color: black;
-    }
-    #follow-the-white-rabbit[open] .content {
-      padding: 0 var(--ddd-spacing-4);
-    }
-    #follow-the-white-rabbit ul,
-    #follow-the-white-rabbit li {
-      padding: 0;
-      margin: 0;
-    }
-    #follow-the-white-rabbit li {
-      font-size: var(--ddd-font-size-xs);
-      list-style: none;
-    }
-    #follow-the-white-rabbit li strong,
-    #follow-the-white-rabbit li a {
-      padding: var(--ddd-spacing-2) var(--ddd-spacing-4);
-      color: black;
-      display: block;
-      font-weight: bold;
-    }
-    #follow-the-white-rabbit li:focus-within a,
-    #follow-the-white-rabbit li:hover a {
-      background-color: black;
-      color: yellow;
-    }
-  </style>
-  <details id="follow-the-white-rabbit" open>
-    <summary>How to Develop</summary>
-    <div class="content">
-      <p>
-      
-        <strong>Checkout project on github:</strong> <a href="https://github.com/Christopher-McLaughlin-211/portfolio-very-theme" target="_blank" rel="nofollow">Christopher-McLaughlin-211/portfolio-very-theme</a>
-        
-      </p>
-      <p>
-        You can edit the current page by modifying <code>index.html</code><br />
-        To edit your <strong>portfolio-very-theme</strong> tag, modify <code>src/portfolio-very-theme.js</code>.
-        This file contains all the HTML, CSS and JavaScript used to render your elements above!
-      </p>
-      <p>
-        Web components are easy to follow once you get used to their pattern.
-        Below are links to help on your journey. Good luck, we need you!
-      </p>
-      <ul>
-        <li><a href="https://haxtheweb.org/documentation/ddd" target="_blank">🧑‍🎨 Learn DDD HAX Design system</a></li>
-        <li><a href="https://lit.dev/playground/" target="_blank" rel="nofollow">🔥 Learn Lit</a></li>
-        <li><a href="https://hax.psu.edu" target="_blank">🧙 HAX The Web @ Penn State</a></li>
-      </ul>
-      <h2>Join and Share HAX</h2>
-      <ul>
-        <li><a href="https://github.com/haxtheweb/issues/issues" target="_blank" rel="nofollow">🔮 Ideas to HAX Harder, Better, Faster, Stronger</a></li>
-        <li><a href="https://bit.ly/hax-the-linkedin" target="_blank" rel="nofollow">👔 Share on LinkedIn</a></li>
-        <li><a href="https://bit.ly/hax-the-x" target="_blank" rel="nofollow">🧵 Tweet on X</a></li>
-        <li><a href="https://bit.ly/hax-discord" target="_blank" rel="nofollow">💬 Join Community</a></li>
-      </ul>
-      <h2>Learn the languages and tools</h2>
-      <ul>
-        <li><a href="https://w3schools.com" target="_blank" rel="nofollow">🌐 Learn HTML</a></li>
-        <li><a href="https://web.dev/learn/css/" target="_blank" rel="nofollow">🎨 Learn CSS</a></li>
-        <li><a href="http://Javascript.info" target="_blank" rel="nofollow">💻 Learn JavaScript (JS)</a></li>
-        <li><a href="https://gitimmersion.com" target="_blank" rel="nofollow">🦺 Learn Git / Github</a></li>
-        <li><a href="https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/" target="_blank" rel="nofollow">📦 Learn NPM</a></li>
-        <li><a href="http://learnux.io" target="_blank" rel="nofollow">📐 Learn UX / UI development</a></li>
-      </ul>
-      <h2>Find purpose and inspiration</h2>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=eC7xzavzEKY" target="_blank" rel="nofollow">🐟 This is Water - David Foster Wallace</a></li>
-        <li><a href="https://www.youtube.com/watch?v=kYfNvmF0Bqw" target="_blank" rel="nofollow">🏗️ Secrets of Life - Steve Jobs</a></li>
-        <li><strong>💡 <em>Never. Stop. Innovating.</em></strong></li>
-      </ul>
-    </div>
-  </details>
-</body>
-</html>
+  <banner>
+    <a href="#1">About</a>
+    <a href="#2">Research</a>
+    <a href="#3">Presentation</a>
+    <a href="#4">Development</a>
+    <a href="#5">Contact</a>
+  </banner>
+
+ <a name="1"></a>
+  <div class="page one">
+    <h1>About</h1>
+    <p>Red</p>
+  </div>
+
+  <a name="2"></a>
+  <div class="page two">
+    <h1>Research</h1>
+    <p>Blue</p>
+  </div>
+
+  <a name="3"></a>
+  <div class="page three">
+    <h1>Presentation</h1>
+    <p>Purple</p>
+  </div>
+
+  <a name="4"></a>
+  <div class="page four">
+    <h1>Development</h1>
+    <p>Orange</p>
+  </div>
+
+  <a name="5"></a>
+  <div class="page five">
+    <h1>Contact</h1>
+    <p>Green</p>
+  </div>
+
+</div>
+
+  <script type="module" src="./portfolio-very-theme.js"></script>
