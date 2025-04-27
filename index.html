@@ -7,73 +7,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="Description" content="Demonstration for portfolio-very-theme">
 
-  <style>
-    :root {
-      scroll-behavior: smooth;
-    }
-    div {
-      margin: 0;
-    }
-    banner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color:  #00000066;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: var(--ddd-spacing-16);
-      right: 0;
-      gap: var(--ddd-spacing-4);
-    }
-    banner a {
-      border: var(--ddd-border-width-md) solid var(--ddd-theme-default-white);
-      padding: var(--ddd-spacing-2);
-      background-color: var(--ddd-theme-default-white) !important;
-      text-decoration: none;
-      color: var(--ddd-theme-default-link);
-      border-radius:  var(--ddd-radius-md);
-      transition: 0.4s;
-    }
-    banner a:hover {
-      background-color: var(--ddd-theme-default-limestoneGray)  !important;
-      border: var(--ddd-border-width-md) solid var(--ddd-theme-default-limestoneGray);
-    }
-    .page {
-      min-height: 550px;
-      padding: 120px 16px 40px;
-    }
-    .one {
-      background-color: var(--ddd-theme-default-original87Pink);
-      color: var(--ddd-theme-default-white);
-    }
-    .two {
-      background-color: var(--ddd-theme-default-beaverBlue);
-      color: var(--ddd-theme-default-white);
-    }
-    .three {
-      background-color: var(--ddd-theme-default-wonderPurple);
-      color: var(--ddd-theme-default-white);
-    }
-    .four {
-      background-color: var(--ddd-theme-default-inventOrange);
-      color: var(--ddd-theme-default-white);
-    }
-    .five {
-      background-color: var(--ddd-theme-default-opportunityGreen);
-      color: var(--ddd-theme-default-white);
-    }
-    scroll {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      margin: var(--ddd-spacing-4);
-      background-color: var(--ddd-theme-default-white);
-      border-radius: var(--ddd-radius-md);
-      padding: var(--ddd-spacing-2);
-    }
-  </style>
+<style>
+  :root {
+        scroll-behavior: smooth;
+      }
 
+      div {
+        margin: 0;
+      }
+
+      banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  #00000066;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: var(--ddd-spacing-16);
+        right: 0;
+        gap: var(--ddd-spacing-4);
+      }
+      banner a {
+        border: var(--ddd-border-width-md) solid var(--ddd-theme-default-white);
+        padding: var(--ddd-spacing-2);
+        background-color: var(--ddd-theme-default-white) !important;
+        text-decoration: none;
+        color: var(--ddd-theme-default-link);
+        border-radius: var(--ddd-radius-md);
+        transition: 0.4s;
+      }
+      banner a:hover {
+        background-color: var(--ddd-theme-default-limestoneGray)  !important;
+        border: var(--ddd-border-width-md) solid var(--ddd-theme-default-limestoneGray);
+      }
+
+      .page {
+        min-height: 100vh;
+        padding: 120px 16px 40px;
+      }
+      .one {
+        background-color: var(--ddd-theme-default-skyLight);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .two {
+        background-color: var(--ddd-theme-default-skyMaxLight);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .three {
+        background-color: var(--ddd-theme-default-limestoneGray);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .four {
+        background-color: var(--ddd-theme-default-limestoneLight);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .five {
+        background-color: var(--ddd-theme-default-limestoneMaxLight);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+
+      scroll {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: var(--ddd-spacing-4);
+        background-color: var(--ddd-theme-default-white);
+        border-radius: var(--ddd-radius-md);
+        padding: var(--ddd-spacing-2);
+      }
+
+      .img-about {
+        max-width: 150px;
+        width: 100%;
+        height: 200px;
+        border-radius: var(--ddd-radius-md);
+        display: block;
+        margin-top: var(--ddd-spacing-4);
+      }
+      .img-research {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: var(--ddd-radius-md);
+        display: block;
+        margin-top: var(--ddd-spacing-4);
+      }
+      .img-presentation {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: var(--ddd-radius-md);
+        display: block;
+        margin-top: var(--ddd-spacing-4);
+      }
+      .img-development {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: var(--ddd-radius-md);
+        display: block;
+        margin-top: var(--ddd-spacing-4);
+      }
+      .img-contact {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: var(--ddd-radius-md);
+        display: block;
+        margin-top: var(--ddd-spacing-4);
+        }
+</style>
 
   <title>portfolio-very-theme</title>
 </head>
@@ -91,31 +135,37 @@
  <a name="1"></a>
   <div class="page one">
     <h1>About</h1>
-    <p>Red</p>
+    <p>Hello, I'm Christopher McLaughlin! I am a Cyber Security Operations</p>
+    <p>and Analytics student at the Pennsylvania State University, Class of 2027.</p>
+    <img src="https://img.freepik.com/premium-photo/stick-figure-working-computer_1082141-43504.jpg" class="img-about" />
   </div>
 
   <a name="2"></a>
   <div class="page two">
     <h1>Research</h1>
-    <p>Blue</p>
+    <p>Exploration of cybersecurity threats and defenses.</p>
+    <img src="https://www.engageandprosper.com/wp-content/uploads/2015/01/Productivity-graph-750x637.jpg" class="img-research" />
   </div>
 
   <a name="3"></a>
   <div class="page three">
     <h1>Presentation</h1>
-    <p>Purple</p>
+    <p>simplifying complex cyber topics.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/9094/9094573.png" class="img-presentation" />
   </div>
 
   <a name="4"></a>
   <div class="page four">
     <h1>Development</h1>
-    <p>Orange</p>
+    <p>Creating tools and projects.</p>
+    <img src="https://static.vecteezy.com/system/resources/previews/013/593/769/original/development-line-icon-on-white-background-vector.jpg" class="img-development" />
   </div>
 
   <a name="5"></a>
   <div class="page five">
     <h1>Contact</h1>
-    <p>Green</p>
+    <p>Please contact me @ clm6781</p>
+    <img src="https://thumbs.dreamstime.com/b/person-businessman-running-mail-email-envelope-letter-message-hand-vector-cartoon-stick-figure-character-illustration-230733318.jpg?w=768" class="img-contact" />
   </div>
 
   <scroll-button></scroll-button>

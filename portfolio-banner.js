@@ -6,18 +6,18 @@ import { LitElement, html, css } from "lit";
 import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
 import '@haxtheweb/scroll-button/scroll-button.js';
-
+import '/.PortfolioBanner.js';
 
 /**
- * `portfolio-very-theme`
+ * `portfolio-banner`
  *
  * @demo index.html
- * @element portfolio-very-theme
+ * @element portfolio-banner
  */
-export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
+export class PortfolioBanner extends DDDSuper(I18NMixin(LitElement)) {
 
   static get tag() {
-    return "portfolio-very-theme";
+    return "portfolio-banner";
   }
 
   constructor() {
@@ -48,8 +48,33 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
         padding: var(--ddd-spacing-4);
       }
       h3 span {
-        font-size: var(--portfolio-very-theme-label-font-size, var(--ddd-font-size-s));
+        font-size: var(--portfolio-banner-label-font-size, var(--ddd-font-size-s));
       }
+      banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:  #00000066;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: var(--ddd-spacing-16);
+      right: 0;
+      gap: var(--ddd-spacing-4);
+    }
+    banner a {
+      border: var(--ddd-border-width-md) solid var(--ddd-theme-default-white);
+      padding: var(--ddd-spacing-2);
+      background-color: var(--ddd-theme-default-white) !important;
+      text-decoration: none;
+      color: var(--ddd-theme-default-link);
+      border-radius:  var(--ddd-radius-md);
+      transition: 0.4s;
+    }
+    banner a:hover {
+      background-color: var(--ddd-theme-default-limestoneGray)  !important;
+      border: var(--ddd-border-width-md) solid var(--ddd-theme-default-limestoneGray);
+    }
     `];
   }
 
@@ -72,4 +97,4 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   }
 }
 
-globalThis.customElements.define(PortfolioVeryTheme.tag, PortfolioVeryTheme);
+globalThis.customElements.define(PortfolioBanner.tag, PortfolioBanner);
