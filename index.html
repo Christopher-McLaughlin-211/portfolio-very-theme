@@ -11,74 +11,168 @@
   :root {
         scroll-behavior: smooth;
       }
-      body {
+      div {
         margin: 0;
       }
-      portfolio-very-theme {
-        display: block;
-        height: 100vh;
-        overflow-y: scroll;
+      banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:  #00000066;
+        position: fixed;
+        top: var(--ddd-spacing-13);
+        left: var(--ddd-spacing-0);
+        height: var(--ddd-spacing-16);
+        right: var(--ddd-spacing-0);
+        gap: var(--ddd-spacing-4);
       }
-      portfolio-screen {
-        display: block;
-        height: 100vh;
+      banner a {
+        border: var(--ddd-border-width-md) solid var(--ddd-theme-default-white);
+        padding: var(--ddd-spacing-2);
+        background-color: var(--ddd-theme-default-white) !important;
+        text-decoration: none;
+        color: var(--ddd-theme-default-link);
+        border-radius: var(--ddd-radius-md);
+        transition: 0.4s;
+      }
+      banner a:hover {
+        background-color: var(--ddd-theme-default-limestoneGray)  !important;
+        border: var(--ddd-border-width-md) solid var(--ddd-theme-default-limestoneGray);
+      }
+
+
+      .page {
+        min-height: 100vh;
         padding: 120px 16px 40px;
       }
-      banner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color:  #00000066;
-      position: fixed;
-      top: var(--ddd-spacing-13);
-      left: var(--ddd-spacing-0);
-      height: var(--ddd-spacing-16);
-      right: var(--ddd-spacing-0);
-      gap: var(--ddd-spacing-4);
-    }
-    banner a {
-      border: var(--ddd-border-width-md) solid var(--ddd-theme-default-white);
-      padding: var(--ddd-spacing-2);
-      background-color: var(--ddd-theme-default-white) !important;
-      text-decoration: none;
-      color: var(--ddd-theme-default-link);
-      border-radius:  var(--ddd-radius-md);
-      transition: 0.4s;
-    }
-    banner a:hover {
-      background-color: var(--ddd-theme-default-limestoneGray)  !important;
-      border: var(--ddd-border-width-md) solid var(--ddd-theme-default-limestoneGray);
-    }
+      .one {
+        background-color: var(--ddd-theme-default-skyLight);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .two {
+        background-color: var(--ddd-theme-default-skyMaxLight);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .three {
+        background-color: var(--ddd-theme-default-limestoneGray);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .four {
+        background-color: var(--ddd-theme-default-limestoneLight);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .five {
+        background-color: var(--ddd-theme-default-limestoneMaxLight);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+
+
+      scroll {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: var(--ddd-spacing-4);
+        background-color: var(--ddd-theme-default-white);
+        border-radius: var(--ddd-radius-md);
+        padding: var(--ddd-spacing-2);
+      }
+
+
+      .img-about {
+        max-width: 150px;
+        width: 100%;
+        height: 200px;
+        border-radius: var(--ddd-radius-md);
+        display: block;
+        margin-top: var(--ddd-spacing-4);
+      }
+      .img-research {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: var(--ddd-radius-md);
+        display: block;
+        margin-top: var(--ddd-spacing-4);
+      }
+      .img-presentation {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: var(--ddd-radius-md);
+        display: block;
+        margin-top: var(--ddd-spacing-4);
+      }
+      .img-development {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: var(--ddd-radius-md);
+        display: block;
+        margin-top: var(--ddd-spacing-4);
+      }
+      .img-contact {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        border-radius: var(--ddd-radius-md);
+        display: block;
+        margin-top: var(--ddd-spacing-4);
+        }
 </style>
+
+  <title>portfolio-very-theme</title>
 </head>
 
-<banner>
-  <a href="#1">About</a>
-  <a href="#2">Research</a>
-  <a href="#3">Presentation</a>
-  <a href="#4">Development</a>
-  <a href="#5">Contact</a>
-</banner>
+<div>
+  <banner>
+    <a href="#1">About</a>
+    <a href="#2">Research</a>
+    <a href="#3">Presentation</a>
+    <a href="#4">Development</a>
+    <a href="#5">Contact</a>
+  </banner>
 
-<body>
-  <title>portfolio-very-theme</title>
-  <portfolio-very-theme>
-    <portfolio-screen title="About" class="one">
-      <h1>About</h1>
-      <p>Hello, I'm Christopher McLaughlin! I am a Cyber Security Operations and Analytics student at PSU, Class of 2027.</p>
-      <img src="https://img.freepik.com/premium-photo/stick-figure-working-computer_1082141-43504.jpg" class="img-about" />
-    </portfolio-screen>
-
-    <portfolio-screen title="Research" class="two">
-      <h1>Research</h1>
-      <p>Exploration of cybersecurity threats and defenses.</p>
-      <img src="https://www.engageandprosper.com/wp-content/uploads/2015/01/Productivity-graph-750x637.jpg" class="img-research" />
-    </portfolio-screen>
-
-
-    <div>
-      <scroll-button></scroll-button>
-    </body>
+ <a name="1"></a>
+  <div class="page one">
+    <h1>About</h1>
+    <p>Hello, I'm Christopher McLaughlin! I am a Cyber Security Operations</p>
+    <p>and Analytics student at the Pennsylvania State University, Class of 2027.</p>
+    <img src="https://img.freepik.com/premium-photo/stick-figure-working-computer_1082141-43504.jpg" class="img-about" />
   </div>
+
+
+  <a name="2"></a>
+  <div class="page two">
+    <h1>Research</h1>
+    <p>Exploration of cybersecurity threats and defenses.</p>
+    <img src="https://www.engageandprosper.com/wp-content/uploads/2015/01/Productivity-graph-750x637.jpg" class="img-research" />
+  </div>
+
+
+  <a name="3"></a>
+  <div class="page three">
+    <h1>Presentation</h1>
+    <p>simplifying complex cyber topics.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/9094/9094573.png" class="img-presentation" />
+  </div>
+
+
+  <a name="4"></a>
+  <div class="page four">
+    <h1>Development</h1>
+    <p>Creating tools and projects.</p>
+    <img src="https://static.vecteezy.com/system/resources/previews/013/593/769/original/development-line-icon-on-white-background-vector.jpg" class="img-development" />
+  </div>
+
+
+  <a name="5"></a>
+  <div class="page five">
+    <h1>Contact</h1>
+    <p>Please contact me @ clm6781</p>
+    <img src="https://thumbs.dreamstime.com/b/person-businessman-running-mail-email-envelope-letter-message-hand-vector-cartoon-stick-figure-character-illustration-230733318.jpg?w=768" class="img-contact" />
+  </div>
+
+  <scroll-button></scroll-button>
+</div>
 
   <script type="module" src="./portfolio-very-theme.js"></script>
