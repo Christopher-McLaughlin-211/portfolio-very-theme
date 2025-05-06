@@ -6,23 +6,23 @@ import { LitElement, html, css } from "lit";
 import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
 import '@haxtheweb/scroll-button/scroll-button.js';
-
+import '/.Portfolioresearch.js';
 
 /**
- * `portfolio-very-theme`
+ * `portfolio-research`
  *
  * @demo index.html
- * @element portfolio-very-theme
+ * @element portfolio-research
  */
-export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
+export class PortfolioResearch extends DDDSuper(I18NMixin(LitElement)) {
 
   static get tag() {
-    return "portfolio-very-theme";
+    return "portfolio-research";
   }
 
   constructor() {
     super();
-    this.title = "About";
+    this.title = "Research";
   }
 
   // Lit reactive properties
@@ -37,15 +37,14 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   static get styles() {
     return [super.styles,
     css`
-      :host {
+       :host {
         display: block;
         padding: var(--ddd-spacing-4);
-        background-color: var(--ddd-theme-default-skyLight);
+        background-color: var(--ddd-theme-default-skyMaxLight);
         color: var(--ddd-theme-default-coalyGray);
       }
       img {
-        max-width: 150px;
-        height: 200px;
+        max-width: 300px;
         border-radius: var(--ddd-radius-md);
         margin-top: var(--ddd-spacing-4);
       }
@@ -56,12 +55,10 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   render() {
     return html`
     <h2>${this.title}</h2>
-    <p>Hello, I'm Christopher McLaughlin! I am a Cyber Security Operations</p>
-    <p>and Analytics student at the Pennsylvania State University, Class of 2027.</p>
-    <img src="https://img.freepik.com/premium-photo/stick-figure-working-computer_1082141-43504.jpg"/>
-    `;
+    <p>Exploration of cybersecurity threats and defenses.</p>
+    <img src="https://www.engageandprosper.com/wp-content/uploads/2015/01/Productivity-graph-750x637.jpg" alt="Research Image" />
+  `;
   }
-
 
 
   /**
@@ -73,4 +70,4 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   }
 }
 
-globalThis.customElements.define(PortfolioVeryTheme.tag, PortfolioVeryTheme);
+globalThis.customElements.define(PortfolioResearch.tag, PortfolioResearch);
