@@ -8,15 +8,15 @@ import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
 import '@haxtheweb/scroll-button/scroll-button.js';
 
 /**
- * `portfolio-research`
+ * `portfolio-ver-research`
  *
  * @demo index.html
- * @element portfolio-research
+ * @element portfolio-very-research
  */
-export class PortfolioResearch extends DDDSuper(I18NMixin(LitElement)) {
+export class PortfolioVeryResearch extends DDDSuper(I18NMixin(LitElement)) {
 
   static get tag() {
-    return "portfolio-research";
+    return "portfolio-very-research";
   }
 
   constructor() {
@@ -69,4 +69,4 @@ export class PortfolioResearch extends DDDSuper(I18NMixin(LitElement)) {
   }
 }
 
-globalThis.customElements.define(PortfolioResearch.tag, PortfolioResearch);
+globalThis.customElements.define(PortfolioVeryResearch.tag, PortfolioVeryResearch);

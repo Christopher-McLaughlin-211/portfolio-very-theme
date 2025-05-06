@@ -6,21 +6,17 @@ import { LitElement, html, css } from "lit";
 import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
 import '@haxtheweb/scroll-button/scroll-button.js';
-import './portfolio-very-research.js';
-import './portfolio-very-present.js';
-import './portfolio-very-development.js';
-import './portfolio-very-contact.js';
 
 /**
- * `portfolio-very-theme`
+ * `portfolio-very-present`
  *
  * @demo index.html
- * @element portfolio-very-theme
+ * @element portfolio-very-present
  */
-export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
+export class PortfolioVeryPresent extends DDDSuper(I18NMixin(LitElement)) {
 
   static get tag() {
-    return "portfolio-very-theme";
+    return "portfolio-very-present";
   }
 
   constructor() {
@@ -43,7 +39,7 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
       :host {
         display: block;
         padding: var(--ddd-spacing-4);
-        background-color: var(--ddd-theme-default-skyLight);
+        background-color: var(--ddd-theme-default-limestoneGray);
         color: var(--ddd-theme-default-coalyGray);
       }
       img {
@@ -59,9 +55,8 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   render() {
     return html`
     <h2>${this.title}</h2>
-    <p>Hello, I'm Christopher McLaughlin! I am a Cyber Security Operations</p>
-    <p>and Analytics student at the Pennsylvania State University, Class of 2027.</p>
-    <img src="https://img.freepik.com/premium-photo/stick-figure-working-computer_1082141-43504.jpg"/>
+    <p>simplifying complex cyber topics.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/9094/9094573.png" class="img-presentation" />
     `;
   }
 
@@ -75,4 +70,4 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   }
 }
 
-globalThis.customElements.define(PortfolioVeryTheme.tag, PortfolioVeryTheme);
+globalThis.customElements.define(PortfolioVeryPresent.tag, PortfolioVeryPresent);

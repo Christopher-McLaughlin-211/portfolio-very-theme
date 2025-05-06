@@ -6,21 +6,18 @@ import { LitElement, html, css } from "lit";
 import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
 import '@haxtheweb/scroll-button/scroll-button.js';
-import './portfolio-very-research.js';
-import './portfolio-very-present.js';
-import './portfolio-very-development.js';
-import './portfolio-very-contact.js';
+
 
 /**
- * `portfolio-very-theme`
+ * `portfolio-very-development`
  *
  * @demo index.html
- * @element portfolio-very-theme
+ * @element portfolio-very-development
  */
-export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
+export class PortfolioVeryDevelopment extends DDDSuper(I18NMixin(LitElement)) {
 
   static get tag() {
-    return "portfolio-very-theme";
+    return "portfolio-very-development";
   }
 
   constructor() {
@@ -43,7 +40,7 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
       :host {
         display: block;
         padding: var(--ddd-spacing-4);
-        background-color: var(--ddd-theme-default-skyLight);
+        background-color: var(--ddd-theme-default-limestoneLight);
         color: var(--ddd-theme-default-coalyGray);
       }
       img {
@@ -59,9 +56,8 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   render() {
     return html`
     <h2>${this.title}</h2>
-    <p>Hello, I'm Christopher McLaughlin! I am a Cyber Security Operations</p>
-    <p>and Analytics student at the Pennsylvania State University, Class of 2027.</p>
-    <img src="https://img.freepik.com/premium-photo/stick-figure-working-computer_1082141-43504.jpg"/>
+    <p>Creating tools and projects.</p>
+    <img src="https://static.vecteezy.com/system/resources/previews/013/593/769/original/development-line-icon-on-white-background-vector.jpg" class="img-development" />
     `;
   }
 
@@ -75,4 +71,4 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
   }
 }
 
-globalThis.customElements.define(PortfolioVeryTheme.tag, PortfolioVeryTheme);
+globalThis.customElements.define(PortfolioVeryDevelopment.tag, PortfolioVeryDevelopment);
