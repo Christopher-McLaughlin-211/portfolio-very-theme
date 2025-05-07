@@ -47,10 +47,35 @@ export class PortfolioVeryTheme extends DDDSuper(I18NMixin(LitElement)) {
         color: var(--ddd-theme-default-coalyGray);
       }
       img {
-        max-width: 150px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
+        margin-left: var(--ddd-spacing-30);
         border-radius: var(--ddd-radius-md);
-        margin-top: var(--ddd-spacing-4);
+        margin-top: var(--ddd-spacing-0);
+      }
+      .one {
+        background-color: var(--ddd-theme-default-skyLight);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .one h1 {
+        font-size: var(--ddd-font-size-3xs);
+        margin-top: var(--ddd-spacing-0);
+        margin-bottom: var(--ddd-spacing-25);
+        padding-top: var(--ddd-spacing-0);
+      }
+      .one h2 {
+        font-size: var(--ddd-font-size-3xs);
+        margin-top: var(--ddd-spacing-0);
+        margin-bottom: var(--ddd-spacing-16);
+        margin-right: var(--ddd-font-size-30);
+        text-align: right;
+      }
+      .one p {
+        font-size: var(--ddd-font-size-4xs);
+        margin-top: var(--ddd-spacing-0);
+        margin-bottom: var(--ddd-spacing-3);
+        margin-left: var(--ddd-font-size-30);
+        text-align: left;
       }
     `];
   }

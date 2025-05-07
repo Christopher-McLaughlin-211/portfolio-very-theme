@@ -43,10 +43,28 @@ export class PortfolioVeryPresent extends DDDSuper(I18NMixin(LitElement)) {
         color: var(--ddd-theme-default-coalyGray);
       }
       img {
-        max-width: 150px;
-        height: 200px;
-        border-radius: var(--ddd-radius-md);
+        width: 300px;
+        height: auto;
+        margin-left: var(--ddd-spacing-30);
+        margin-top: var(--ddd-spacing-0);
+      }
+      .three {
+        background-color: var(--ddd-theme-default-limestoneGray);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .three h2 {
+        font-size: var(--ddd-font-size-3xs);
         margin-top: var(--ddd-spacing-4);
+        margin-bottom: var(--ddd-spacing-30);
+        margin-right: var(--ddd-spacing-30);
+        text-align: right;
+      }
+      .three p {
+        font-size: var(--ddd-font-size-4xs);
+        margin-top: var(--ddd-spacing-20);
+        margin-bottom: var(--ddd-spacing-3);
+        margin-left: var(--ddd-spacing-30);
+        text-align: left;
       }
     `];
   }

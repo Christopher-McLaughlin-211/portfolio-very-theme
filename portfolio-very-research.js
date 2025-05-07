@@ -43,9 +43,29 @@ export class PortfolioVeryResearch extends DDDSuper(I18NMixin(LitElement)) {
         color: var(--ddd-theme-default-coalyGray);
       }
       img {
-        max-width: 300px;
+        width: 400px;
+        height: auto;
         border-radius: var(--ddd-radius-md);
         margin-top: var(--ddd-spacing-4);
+        margin-left: var(--ddd-spacing-30);
+      }
+      .two {
+        background-color: var(--ddd-theme-default-skyMaxLight);
+        color: var(--ddd-theme-default-coalyGray);
+      }
+      .two h2 {
+        font-size: var(--ddd-font-size-3xs);
+        margin-top: var(--ddd-spacing-4);
+        margin-bottom: var(--ddd-spacing-30);
+        margin-right:  var(--ddd-spacing-30);
+        text-align: right;
+      }
+      .two p {
+        font-size:  var(--ddd-font-size-4xs);
+        margin-top: var(--ddd-spacing-4);
+        margin-bottom: var(--ddd-spacing-3);
+        margin-left: var(--ddd-spacing-15);
+        text-align: left;
       }
     `];
   }
