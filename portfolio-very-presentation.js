@@ -8,15 +8,15 @@ import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
 import '@haxtheweb/scroll-button/scroll-button.js';
 
 /**
- * `portfolio-very-present`
+ * `portfolio-very-presentation`
  *
  * @demo index.html
- * @element portfolio-very-present
+ * @element portfolio-very-presentation
  */
-export class PortfolioVeryPresent extends DDDSuper(I18NMixin(LitElement)) {
+export class PortfolioVeryPresentation extends DDDSuper(I18NMixin(LitElement)) {
 
   static get tag() {
-    return "portfolio-very-present";
+    return "portfolio-very-presentation";
   }
 
   constructor() {
@@ -62,7 +62,7 @@ export class PortfolioVeryPresent extends DDDSuper(I18NMixin(LitElement)) {
       .three p {
         font-size: var(--ddd-font-size-4xs);
         margin-top: var(--ddd-spacing-20);
-        margin-bottom: var(--ddd-spacing-3);
+        margin-bottom: var(--ddd-spacing-30);
         margin-left: var(--ddd-spacing-30);
         text-align: left;
       }
@@ -88,4 +88,4 @@ export class PortfolioVeryPresent extends DDDSuper(I18NMixin(LitElement)) {
   }
 }
 
-globalThis.customElements.define(PortfolioVeryPresent.tag, PortfolioVeryPresent);
+globalThis.customElements.define(PortfolioVeryPresentation.tag, PortfolioVeryPresentation);

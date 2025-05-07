@@ -7,7 +7,7 @@ import { DDDSuper } from "@haxtheweb/d-d-d/d-d-d.js";
 import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
 import '@haxtheweb/scroll-button/scroll-button.js';
 import './portfolio-very-research.js';
-import './portfolio-very-present.js';
+import './portfolio-very-presentation.js';
 import './portfolio-very-development.js';
 import './portfolio-very-contact.js';
 
